@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wlm-persona-engine"
+version = "0.1.0"
+description = "Generate stable, consistent, non-collapsing AI personas using structural dimensions."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Wujie Gu" }
+]
+
+keywords = [
+    "WLM",
+    "persona",
+    "identity",
+    "role-engine",
+    "structural-reasoning",
+    "virtual-humans",
+    "npc",
+    "agents"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/wlm-persona-engine"
+Documentation = "https://github.com/YOUR_USERNAME/wlm-persona-engine/tree/main/docs"
+Source = "https://github.com/YOUR_USERNAME/wlm-persona-engine"
+Issues = "https://github.com/YOUR_USERNAME/wlm-persona-engine/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+wlm-persona = "wlm_persona_engine.cli:main"
